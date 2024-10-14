@@ -1,0 +1,17 @@
+names = [
+    ["lice", "Bob", "Charlie"],
+    ["David", "Eve", "Frank"],
+    ["Grace", "Heidi", "Ivan"],
+    ["Judy", "Ken", "Laura"]
+    ]
+
+for name in names:
+    if "Alice" in name:
+        name.remove("Alice")
+        print(names)
+        break
+
+else:
+    new_name = input("Input New Name: ")
+    names[0].append(new_name)
+    print(names)
